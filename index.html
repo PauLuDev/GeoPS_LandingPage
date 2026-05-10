@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>GeoPS — Ofertas locales, al alcance de tu mano</title>
+  <meta name="description" content="GeoPS conecta PyMEs locales con clientes en Lima a través de cupones geolocalizados en tiempo real." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><path d='M16 2C10.5 2 6 6.5 6 12c0 7 10 18 10 18s10-11 10-18c0-5.5-4.5-10-10-10zm0 13a3 3 0 110-6 3 3 0 010 6z' fill='%230A0A0A'/></svg>" />
+</head>
+<body>
+
+<header class="nav">
+  <div class="container nav__inner">
+    <a href="#" class="logo" aria-label="GeoPS home">
+      <span class="logo__pin" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22">
+          <path d="M12 2C7.6 2 4 5.6 4 10c0 5.6 8 12 8 12s8-6.4 8-12c0-4.4-3.6-8-8-8zm0 11a3 3 0 110-6 3 3 0 010 6z"/>
+        </svg>
+      </span>
+      <span>GeoPS</span>
+    </a>
+
+    <nav class="nav__menu" aria-label="Primary">
+      <ul class="nav__links">
+        <li><a href="#services" data-i18n="nav.how">Cómo funciona</a></li>
+        <li><a href="#pricing" data-i18n="nav.biz">Para negocios</a></li>
+        <li><a href="#pricing" data-i18n="nav.pricing">Precios</a></li>
+        <li><a href="#team" data-i18n="nav.team">Equipo</a></li>
+        <li><a href="#faq" data-i18n="nav.faq">FAQ</a></li>
+      </ul>
+    </nav>
+
+    <div class="nav__right">
+      <div class="lang" role="group" aria-label="Language">
+        <button type="button" data-lang="es" class="active">ES</button>
+        <button type="button" data-lang="en">EN</button>
+      </div>
+      <a href="mailto:geops@gmail.com" class="btn btn--dark" data-i18n="nav.contact">Contáctanos</a>
+      <button class="nav__toggle" aria-label="Toggle menu"><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<section class="hero">
+  <div class="container hero__inner">
+    <div class="hero__copy">
+      <h1>
+        <span class="line-muted" data-i18n="hero.h1.a">Ofertas locales,</span>
+        <span class="line-bold" data-i18n="hero.h1.b">al alcance de tu mano.</span>
+      </h1>
+      <p class="hero__sub" data-i18n="hero.sub">Descubre cupones y promociones de negocios cerca de ti en tiempo real. Para clientes que quieren ahorrar y PyMEs que quieren crecer.</p>
+      <div class="hero__ctas">
+        <a href="#demo" class="btn btn--dark btn--lg" data-i18n="hero.cta1">Explorar el mapa</a>
+        <a href="#demo" class="btn btn--gray btn--lg" data-i18n="hero.cta2">Ver demo</a>
+      </div>
+    </div>
+    <div class="hero__cards" id="hero-cards">
+      <div class="hcard hcard--1"><img src="assets/rest.jpg" alt="Restaurantes"/></div>
+      <div class="hcard hcard--2"><img src="assets/cafe.jpg" alt="Cafés"/></div>
+      <div class="hcard hcard--3"><img src="assets/market.jpg" alt="Market"/></div>
+      <div class="hcard hcard--4"><img src="assets/ropa.jpg" alt="Moda"/></div>
+    </div>
+  </div>
+</section>
+
+<section class="logobar reveal">
+  <div class="container">
+    <div class="logobar__head">
+      <div class="logobar__count" data-i18n="logobar.count">50+ negocios · ★★★★★</div>
+      <div class="logobar__label" data-i18n="logobar.label">Confiado por negocios locales</div>
+    </div>
+  </div>
+  <div class="marquee">
+    <div class="marquee__track">
+      <span>Le Coquelicot</span><span class="marquee__sep">✦</span>
+      <span>Dua Blend</span><span class="marquee__sep">✦</span>
+      <span>Komoda</span><span class="marquee__sep">✦</span>
+      <span>Rutina Café</span><span class="marquee__sep">✦</span>
+      <span>La Lucha</span><span class="marquee__sep">✦</span>
+      <span>Maido</span><span class="marquee__sep">✦</span>
+      <span>Central</span><span class="marquee__sep">✦</span>
+      <span>Isolina</span><span class="marquee__sep">✦</span>
+      <span>El Mercado</span><span class="marquee__sep">✦</span>
+      <span>Osso</span><span class="marquee__sep">✦</span>
+      <span>Astrid y Gastón</span><span class="marquee__sep">✦</span>
+      <span>Tanta</span><span class="marquee__sep">✦</span>
+      <span>La Mar</span><span class="marquee__sep">✦</span>
+      <span>Osaka</span><span class="marquee__sep">✦</span>
+      <span>Canta Rana</span><span class="marquee__sep">✦</span>
+      <!-- duplicate for seamless loop -->
+      <span>Le Coquelicot</span><span class="marquee__sep">✦</span>
+      <span>Dua Blend</span><span class="marquee__sep">✦</span>
+      <span>Komoda</span><span class="marquee__sep">✦</span>
+      <span>Rutina Café</span><span class="marquee__sep">✦</span>
+      <span>La Lucha</span><span class="marquee__sep">✦</span>
+      <span>Maido</span><span class="marquee__sep">✦</span>
+      <span>Central</span><span class="marquee__sep">✦</span>
+      <span>Isolina</span><span class="marquee__sep">✦</span>
+      <span>El Mercado</span><span class="marquee__sep">✦</span>
+      <span>Osso</span><span class="marquee__sep">✦</span>
+      <span>Astrid y Gastón</span><span class="marquee__sep">✦</span>
+      <span>Tanta</span><span class="marquee__sep">✦</span>
+      <span>La Mar</span><span class="marquee__sep">✦</span>
+      <span>Osaka</span><span class="marquee__sep">✦</span>
+      <span>Canta Rana</span><span class="marquee__sep">✦</span>
+    </div>
+  </div>
+</section>
+
+<section class="cats reveal" id="categories">
+  <div class="container">
+    <div class="cats__head">
+      <h2 class="section-title" data-i18n="cats.title">Categorías destacadas</h2>
+    </div>
+
+    <div class="cats__grid reveal-stagger">
+      <article class="cat-card">
+        <div class="cat-card__img">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 3v8a3 3 0 003 3v7M8 3v8M11 3v8M16 3c-1 2-1 5 0 7v11" stroke-linecap="round"/></svg>
+        </div>
+        <div class="cat-card__body">
+          <div class="cat-card__name" data-i18n="cat.1.n">Restaurantes</div>
+          <div class="cat-card__sub" data-i18n="cat.1.s">Descuentos en comida cerca de ti</div>
+        </div>
+      </article>
+      <article class="cat-card">
+        <div class="cat-card__img">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 4v16M4 12h16" stroke-linecap="round"/><circle cx="12" cy="12" r="9"/></svg>
+        </div>
+        <div class="cat-card__body">
+          <div class="cat-card__name" data-i18n="cat.2.n">Farmacias y Salud</div>
+          <div class="cat-card__sub" data-i18n="cat.2.s">Medicamentos y bienestar con descuento</div>
+        </div>
+      </article>
+      <article class="cat-card">
+        <div class="cat-card__img">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 8h12v6a4 4 0 01-4 4H8a4 4 0 01-4-4V8z"/><path d="M16 10h2a2 2 0 010 4h-2M6 3v2M10 3v2M14 3v2" stroke-linecap="round"/></svg>
+        </div>
+        <div class="cat-card__body">
+          <div class="cat-card__name" data-i18n="cat.3.n">Cafés y Bebidas</div>
+          <div class="cat-card__sub" data-i18n="cat.3.s">Tu café favorito más barato</div>
+        </div>
+      </article>
+      <article class="cat-card">
+        <div class="cat-card__img">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 7l-2 3v9h16v-9l-2-3M6 7h12M6 7l2-3h8l2 3M9 11a3 3 0 006 0"/></svg>
+        </div>
+        <div class="cat-card__body">
+          <div class="cat-card__name" data-i18n="cat.4.n">Tiendas y Moda</div>
+          <div class="cat-card__sub" data-i18n="cat.4.s">Ropa, accesorios y más</div>
+        </div>
+      </article>
+    </div>
+
+    <div class="cats__extra-wrap" id="cats-extra">
+      <div class="cats__grid" style="margin-top:20px;">
+        <article class="cat-card">
+          <div class="cat-card__img">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 5h2l2.5 11a2 2 0 002 1.5h7.5a2 2 0 002-1.5L20 8H6"/><circle cx="9" cy="20" r="1.2"/><circle cx="17" cy="20" r="1.2"/></svg>
+          </div>
+          <div class="cat-card__body">
+            <div class="cat-card__name" data-i18n="cat.5.n">Supermercados</div>
+            <div class="cat-card__sub" data-i18n="cat.5.s">Ahorra en tu compra diaria</div>
+          </div>
+        </article>
+        <article class="cat-card">
+          <div class="cat-card__img">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="6" width="18" height="12" rx="2"/><path d="M10 10l5 2-5 2v-4z" fill="currentColor"/></svg>
+          </div>
+          <div class="cat-card__body">
+            <div class="cat-card__name" data-i18n="cat.6.n">Entretenimiento</div>
+            <div class="cat-card__sub" data-i18n="cat.6.s">Cines, juegos y diversión</div>
+          </div>
+        </article>
+        <article class="cat-card">
+          <div class="cat-card__img">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 21s-7-4-7-10a4 4 0 017-2.6A4 4 0 0119 11c0 6-7 10-7 10z"/></svg>
+          </div>
+          <div class="cat-card__body">
+            <div class="cat-card__name" data-i18n="cat.7.n">Belleza y Cuidado</div>
+            <div class="cat-card__sub" data-i18n="cat.7.s">Salones, spas y más</div>
+          </div>
+        </article>
+        <article class="cat-card">
+          <div class="cat-card__img">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="5" width="18" height="12" rx="2"/><path d="M9 21h6M12 17v4"/></svg>
+          </div>
+          <div class="cat-card__body">
+            <div class="cat-card__name" data-i18n="cat.8.n">Tecnología</div>
+            <div class="cat-card__sub" data-i18n="cat.8.s">Gadgets y accesorios tech</div>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <button class="cats__more" id="cats-toggle" data-i18n="cats.more">Ver todas las categorías →</button>
+  </div>
+</section>
+
+<section class="services reveal" id="services">
+  <div class="container">
+    <div class="services__grid">
+      <div>
+        <h2 class="section-title">
+          <span class="muted" data-i18n="svc.title.a">Todo lo que</span><br/>
+          <span data-i18n="svc.title.b">GeoPS hace por ti.</span>
+        </h2>
+
+        <div class="tech">
+          <div class="tech__label" data-i18n="svc.tech">Tech stack</div>
+          <div class="tech__chips">
+            <span>Angular</span>
+            <span>Firebase</span>
+            <span>PostgreSQL + PostGIS</span>
+            <span>Azure</span>
+            <span>Cloudinary</span>
+            <span>OpenStreetMap</span>
+            <span>RabbitMQ</span>
+            <span>Spring Boot</span>
+          </div>
+        </div>
+      </div>
+
+      <ul class="services__list reveal-stagger">
+        <li class="service-item">
+          <span class="service-item__dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12l4 4 10-10" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          <span data-i18n="svc.1">Mapa interactivo en tiempo real</span>
+        </li>
+        <li class="service-item">
+          <span class="service-item__dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12l4 4 10-10" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          <span data-i18n="svc.2">Cupones geolocalizados</span>
+        </li>
+        <li class="service-item">
+          <span class="service-item__dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12l4 4 10-10" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          <span data-i18n="svc.3">Filtros por categoría</span>
+        </li>
+        <li class="service-item">
+          <span class="service-item__dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12l4 4 10-10" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          <span data-i18n="svc.4">Dashboard para negocios</span>
+        </li>
+        <li class="service-item">
+          <span class="service-item__dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12l4 4 10-10" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          <span data-i18n="svc.5">Métricas en tiempo real</span>
+        </li>
+        <li class="service-item">
+          <span class="service-item__dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12l4 4 10-10" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          <span data-i18n="svc.6">Campañas estacionales</span>
+        </li>
+        <li class="service-item">
+          <span class="service-item__dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12l4 4 10-10" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          <span data-i18n="svc.7">Reserva y canje de cupones</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="demo reveal" id="demo">
+  <div class="container demo__inner">
+    <div class="demo__copy">
+      <div class="eyebrow" data-i18n="demo.eye">Demo interactiva</div>
+      <h2 class="section-title" data-i18n="demo.title">Así funciona GeoPS</h2>
+      <p class="section-sub" data-i18n="demo.sub">Activa tu ubicación y descubre ofertas a metros de ti.</p>
+      <div class="demo__cta">
+        <a href="#" class="btn btn--dark btn--lg" data-i18n="demo.cta">Probar demo</a>
+      </div>
+    </div>
+
+    <div class="map" aria-label="Mapa con marcadores de ejemplo">
+      <svg class="map__svg" viewBox="0 0 400 320" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+        <defs>
+          <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+            <path d="M40 0H0V40" fill="none" stroke="#EAEAEA" stroke-width="1"/>
+          </pattern>
+        </defs>
+        <rect width="400" height="320" fill="#F5F5F5"/>
+        <rect width="400" height="320" fill="url(#grid)"/>
+        <path d="M0 110 L400 90" stroke="#FFFFFF" stroke-width="14"/>
+        <path d="M0 220 L400 200" stroke="#FFFFFF" stroke-width="10"/>
+        <path d="M120 0 L140 320" stroke="#FFFFFF" stroke-width="12"/>
+        <path d="M280 0 L300 320" stroke="#FFFFFF" stroke-width="8"/>
+        <rect x="180" y="120" width="80" height="60" rx="6" fill="#E5F4EA"/>
+        <rect x="20" y="20" width="80" height="60" rx="4" fill="#EAEAEA"/>
+        <rect x="20" y="240" width="80" height="60" rx="4" fill="#EAEAEA"/>
+        <rect x="320" y="20" width="60" height="50" rx="4" fill="#EAEAEA"/>
+        <rect x="320" y="230" width="60" height="70" rx="4" fill="#EAEAEA"/>
+      </svg>
+
+      <div class="map__user" style="left: 50%; top: 56%;"></div>
+
+      <div class="marker" style="left: 28%; top: 32%;">
+        <div class="marker__chip"><strong>−25%</strong> Sabor Criollo</div>
+        <div class="marker__pin green"></div>
+      </div>
+      <div class="marker" style="left: 70%; top: 42%;">
+        <div class="marker__chip"><strong>2x1</strong> CaféRun</div>
+        <div class="marker__pin"></div>
+      </div>
+      <div class="marker" style="left: 44%; top: 78%;">
+        <div class="marker__chip"><strong>−15%</strong> FarmaVida</div>
+        <div class="marker__pin"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="team reveal" id="team">
+  <div class="container">
+    <div class="team__lead">
+      <h2 class="section-title" data-i18n="team.title">Conectamos tu negocio, con clientes cercanos.</h2>
+      <div class="team__copy">
+        <p data-i18n="team.p1">GeoPS nació de una observación simple: miles de pequeños negocios en Lima ofrecen descuentos increíbles, pero sus clientes potenciales nunca se enteran.</p>
+        <p data-i18n="team.p2">Al mismo tiempo, millones de personas pasan frente a esos negocios cada día sin saber lo que se pierden.</p>
+        <p data-i18n="team.p3">Somos PauLuDev, un equipo de estudiantes de Ingeniería de Software de la UPC, y creamos GeoPS para cerrar esa brecha.</p>
+        <p data-i18n="team.p4">Creemos que la tecnología debe democratizar el acceso al comercio local, no concentrarlo en las grandes cadenas.</p>
+      </div>
+    </div>
+
+    <div class="team__grid reveal-stagger">
+      <article class="member">
+        <div class="member__photo">
+          <img src="assets/paula.png" alt="Paula Luyo" style="width:100%;height:100%;object-fit:cover;"/>
+        </div>
+        <div class="member__name">Paula Luyo</div>
+        <div class="member__role" data-i18n="member.role.se">Ingeniería de Software</div>
+        <div class="member__links">
+          <a href="https://github.com/Paulu27" target="_blank" rel="noopener" aria-label="GitHub"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.7.5.5 5.7.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.3.8-.6v-2c-3.2.7-3.9-1.4-3.9-1.4-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.1.1 1.7 1.2 1.7 1.2 1 1.7 2.7 1.2 3.4.9.1-.7.4-1.2.7-1.5-2.5-.3-5.2-1.3-5.2-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2 1-.3 2-.4 3-.4s2 .1 3 .4c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.2 5.7.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6 4.6-1.5 7.9-5.8 7.9-10.9C23.5 5.7 18.3.5 12 .5z"/></svg></a>
+        </div>
+      </article>
+
+      <article class="member">
+        <div class="member__photo">
+          <img src="assets/daniela.png" alt="Daniela Gómez" style="width:100%;height:100%;object-fit:cover;"/>
+        </div>
+        <div class="member__name">Daniela Gómez</div>
+        <div class="member__role" data-i18n="member.role.se">Ingeniería de Software</div>
+        <div class="member__links">
+          <a href="https://github.com/DanieGF1" target="_blank" rel="noopener" aria-label="GitHub"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.7.5.5 5.7.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.3.8-.6v-2c-3.2.7-3.9-1.4-3.9-1.4-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.1.1 1.7 1.2 1.7 1.2 1 1.7 2.7 1.2 3.4.9.1-.7.4-1.2.7-1.5-2.5-.3-5.2-1.3-5.2-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2 1-.3 2-.4 3-.4s2 .1 3 .4c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.2 5.7.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6 4.6-1.5 7.9-5.8 7.9-10.9C23.5 5.7 18.3.5 12 .5z"/></svg></a>
+        </div>
+      </article>
+
+      <article class="member">
+        <div class="member__photo">
+          <img src="assets/abigail.png" alt="Abigail Goñe" style="width:100%;height:100%;object-fit:cover;"/>
+        </div>
+        <div class="member__name">Abigail Goñe</div>
+        <div class="member__role" data-i18n="member.role.se">Ingeniería de Software</div>
+        <div class="member__links">
+          <a href="https://github.com/abigoe02" target="_blank" rel="noopener" aria-label="GitHub"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.7.5.5 5.7.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.3.8-.6v-2c-3.2.7-3.9-1.4-3.9-1.4-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.1.1 1.7 1.2 1.7 1.2 1 1.7 2.7 1.2 3.4.9.1-.7.4-1.2.7-1.5-2.5-.3-5.2-1.3-5.2-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2 1-.3 2-.4 3-.4s2 .1 3 .4c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.2 5.7.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6 4.6-1.5 7.9-5.8 7.9-10.9C23.5 5.7 18.3.5 12 .5z"/></svg></a>
+        </div>
+      </article>
+
+      <article class="member">
+        <div class="member__photo">
+          <img src="assets/neil.png" alt="Neil Curipaco" style="width:100%;height:100%;object-fit:cover;"/>
+        </div>
+        <div class="member__name">Neil Curipaco</div>
+        <div class="member__role" data-i18n="member.role.se">Ingeniería de Software</div>
+        <div class="member__links">
+          <a href="https://github.com/Neilcuri7" target="_blank" rel="noopener" aria-label="GitHub"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.7.5.5 5.7.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.3.8-.6v-2c-3.2.7-3.9-1.4-3.9-1.4-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.1.1 1.7 1.2 1.7 1.2 1 1.7 2.7 1.2 3.4.9.1-.7.4-1.2.7-1.5-2.5-.3-5.2-1.3-5.2-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2 1-.3 2-.4 3-.4s2 .1 3 .4c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.2 5.7.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6 4.6-1.5 7.9-5.8 7.9-10.9C23.5 5.7 18.3.5 12 .5z"/></svg></a>
+        </div>
+      </article>
+
+      <article class="member">
+        <div class="member__photo">
+          <img src="assets/giancarlo.png" alt="Giancarlo Solis" style="width:100%;height:100%;object-fit:cover;"/>
+        </div>
+        <div class="member__name">Giancarlo Solis</div>
+        <div class="member__role" data-i18n="member.role.se">Ingeniería de Software</div>
+        <div class="member__links">
+          <a href="https://github.com/LucidVoid10" target="_blank" rel="noopener" aria-label="GitHub"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.7.5.5 5.7.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.3.8-.6v-2c-3.2.7-3.9-1.4-3.9-1.4-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.1.1 1.7 1.2 1.7 1.2 1 1.7 2.7 1.2 3.4.9.1-.7.4-1.2.7-1.5-2.5-.3-5.2-1.3-5.2-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2 1-.3 2-.4 3-.4s2 .1 3 .4c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.2 5.7.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6 4.6-1.5 7.9-5.8 7.9-10.9C23.5 5.7 18.3.5 12 .5z"/></svg></a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="testi reveal">
+  <div class="container">
+    <div class="testi__head">
+      <h2 class="section-title" data-i18n="testi.title">Lo que dicen los negocios que ya usan GeoPS.</h2>
+      <span class="testi__badge">
+        <span class="badge__dot" style="background:var(--green); box-shadow:0 0 0 4px rgba(249,115,22,.15);"></span>
+        <span data-i18n="testi.badge">50+ negocios afiliados</span>
+      </span>
+    </div>
+    <div class="testi__grid reveal-stagger">
+      <article class="testi-card">
+        <div class="testi-card__quote">"</div>
+        <p class="testi-card__text" data-i18n="testi.1.t">Publicamos nuestro primer cupón un lunes y el miércoles ya teníamos 40 clientes nuevos.</p>
+        <div class="testi-card__author">
+          <div class="testi-card__name">María Quispe</div>
+          <div class="testi-card__role" data-i18n="testi.1.a">Dueña de Sabor Criollo, La Victoria</div>
+        </div>
+      </article>
+      <article class="testi-card">
+        <div class="testi-card__quote">"</div>
+        <p class="testi-card__text" data-i18n="testi.2.t">Con GeoPS mis campañas llegan exactamente a la gente que pasa por mi tienda.</p>
+        <div class="testi-card__author">
+          <div class="testi-card__name">Carlos Mendoza</div>
+          <div class="testi-card__role" data-i18n="testi.2.a">Propietario de La Italiana, Miraflores</div>
+        </div>
+      </article>
+      <article class="testi-card">
+        <div class="testi-card__quote">"</div>
+        <p class="testi-card__text" data-i18n="testi.3.t">El dashboard es increíblemente fácil de usar. En menos de 10 minutos creé mi primera campaña.</p>
+        <div class="testi-card__author">
+          <div class="testi-card__name">Rosa Flores</div>
+          <div class="testi-card__role" data-i18n="testi.3.a">Administradora de FarmaVida, San Isidro</div>
+        </div>
+      </article>
+      <article class="testi-card">
+        <div class="testi-card__quote">"</div>
+        <p class="testi-card__text" data-i18n="testi.4.t">Las ventas del fin de semana subieron un 30%.</p>
+        <div class="testi-card__author">
+          <div class="testi-card__name">Jorge Ramírez</div>
+          <div class="testi-card__role" data-i18n="testi.4.a">Dueño de CaféRun, Barranco</div>
+        </div>
+      </article>
+      <article class="testi-card">
+        <div class="testi-card__quote">"</div>
+        <p class="testi-card__text" data-i18n="testi.5.t">Por fin tengo métricas reales de mi publicidad.</p>
+        <div class="testi-card__author">
+          <div class="testi-card__name">Ana Torres</div>
+          <div class="testi-card__role" data-i18n="testi.5.a">Gerente de TechStore, Surco</div>
+        </div>
+      </article>
+      <article class="testi-card">
+        <div class="testi-card__quote">"</div>
+        <p class="testi-card__text" data-i18n="testi.6.t">Ahora competimos con las grandes cadenas en nuestro barrio.</p>
+        <div class="testi-card__author">
+          <div class="testi-card__name">Luis Huanca</div>
+          <div class="testi-card__role" data-i18n="testi.6.a">Propietario de MiniMarket Huanca, Cercado</div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="pricing reveal" id="pricing">
+  <div class="container">
+    <div class="pricing__head">
+      <h2 class="section-title" data-i18n="price.title">Planes simples. Resultados reales.</h2>
+      <p class="section-sub" data-i18n="price.sub">Sin costos ocultos. Empieza gratis y escala cuando lo necesites.</p>
+    </div>
+
+    <div class="steps">
+      <div class="step"><span class="step__num">1</span><span data-i18n="step.1">Regístrate</span></div>
+      <div class="step__arrow">→</div>
+      <div class="step"><span class="step__num">2</span><span data-i18n="step.2">Publica</span></div>
+      <div class="step__arrow">→</div>
+      <div class="step"><span class="step__num">3</span><span data-i18n="step.3">Atrae clientes</span></div>
+    </div>
+
+    <div class="plans">
+      <article class="plan plan--free">
+        <div class="plan__tag" data-i18n="plan.free.tag">Freemium</div>
+        <div class="plan__price"><span data-i18n="plan.free.price">Gratis</span></div>
+        <p class="plan__lead" data-i18n="plan.free.lead">Hasta 2 campañas activas sin costo.</p>
+        <ul class="plan__list">
+          <li><span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l4 4 10-10" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span data-i18n="plan.free.b1">2 campañas activas</span></li>
+          <li><span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l4 4 10-10" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span data-i18n="plan.free.b2">Aparece en el mapa</span></li>
+          <li><span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l4 4 10-10" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span data-i18n="plan.free.b3">Métricas básicas</span></li>
+          <li><span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l4 4 10-10" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span data-i18n="plan.free.b4">Sin tarjeta de crédito</span></li>
+        </ul>
+        <a href="#" class="btn btn--lg" data-i18n="plan.free.cta">Registrarme gratis</a>
+      </article>
+
+      <article class="plan plan--pro">
+        <div class="plan__tag" data-i18n="plan.pro.tag">Premium</div>
+        <div class="plan__price"><span data-i18n="plan.pro.price">S/ 79</span><small data-i18n="plan.pro.unit">/mes</small></div>
+        <p class="plan__lead" data-i18n="plan.pro.lead">Campañas ilimitadas, métricas avanzadas y cupones destacados.</p>
+        <ul class="plan__list">
+          <li><span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l4 4 10-10" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span data-i18n="plan.pro.b1">Campañas ilimitadas</span></li>
+          <li><span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l4 4 10-10" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span data-i18n="plan.pro.b2">Cancela cuando quieras</span></li>
+          <li><span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l4 4 10-10" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span data-i18n="plan.pro.b3">Cupones destacados</span></li>
+          <li><span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l4 4 10-10" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span data-i18n="plan.pro.b4">Dashboard con métricas reales</span></li>
+          <li><span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l4 4 10-10" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span data-i18n="plan.pro.b5">Upgrade o downgrade al instante</span></li>
+          <li><span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l4 4 10-10" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span data-i18n="plan.pro.b6">Soporte prioritario</span></li>
+        </ul>
+        <a href="#" class="btn btn--dark btn--lg" data-i18n="plan.pro.cta">Empezar ahora</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="faq reveal" id="faq">
+  <div class="container">
+    <div class="faq__inner">
+      <div>
+        <h2 class="section-title" style="margin-bottom: 40px;" data-i18n="faq.title">Tus preguntas respondidas.</h2>
+        <div class="faq__list">
+
+          <div class="faq-item">
+            <button class="faq-item__btn" aria-expanded="false">
+              <span data-i18n="faq.1.q">¿GeoPS es gratis para los clientes?</span>
+              <span class="faq-item__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12h14" stroke-linecap="round"/></svg></span>
+            </button>
+            <div class="faq-item__panel"><div><div class="faq-item__inner" data-i18n="faq.1.a">Sí, GeoPS es completamente gratis para los clientes finales. Solo necesitan registrarse para reservar y canjear cupones.</div></div></div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-item__btn" aria-expanded="false">
+              <span data-i18n="faq.2.q">¿Cómo publico mis cupones?</span>
+              <span class="faq-item__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12h14" stroke-linecap="round"/></svg></span>
+            </button>
+            <div class="faq-item__panel"><div><div class="faq-item__inner" data-i18n="faq.2.a">En menos de 10 minutos desde el dashboard de negocios. Diseña tu cupón, define el área de cobertura y publícalo en el mapa.</div></div></div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-item__btn" aria-expanded="false">
+              <span data-i18n="faq.3.q">¿Cuál es la diferencia entre Freemium y Premium?</span>
+              <span class="faq-item__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12h14" stroke-linecap="round"/></svg></span>
+            </button>
+            <div class="faq-item__panel"><div><div class="faq-item__inner" data-i18n="faq.3.a">Freemium: hasta 2 campañas activas y métricas básicas, gratis. Premium S/79/mes: campañas ilimitadas, cupones destacados y métricas avanzadas en tiempo real.</div></div></div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-item__btn" aria-expanded="false">
+              <span data-i18n="faq.4.q">¿Puedo cancelar cuando quiera?</span>
+              <span class="faq-item__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12h14" stroke-linecap="round"/></svg></span>
+            </button>
+            <div class="faq-item__panel"><div><div class="faq-item__inner" data-i18n="faq.4.a">Sí, puedes cancelar tu plan Premium en cualquier momento desde el dashboard. No hay cobros adicionales ni penalizaciones.</div></div></div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-item__btn" aria-expanded="false">
+              <span data-i18n="faq.5.q">¿Los clientes necesitan descargar una app?</span>
+              <span class="faq-item__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12h14" stroke-linecap="round"/></svg></span>
+            </button>
+            <div class="faq-item__panel"><div><div class="faq-item__inner" data-i18n="faq.5.a">No. GeoPS funciona 100% desde el navegador, en móvil o desktop. Sin instalaciones ni descargas.</div></div></div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__lead">
+      <h2 class="footer__title">
+        <span data-i18n="footer.title.a">Juntos</span>
+        <span class="cycle"><span class="cycle__word">conectamos</span></span>
+        <br/>
+        <span data-i18n="footer.title.b">el comercio local.</span>
+      </h2>
+      <div class="footer__contact">
+        <span data-i18n="footer.contact">Contáctanos</span>
+        <a href="mailto:geops@gmail.com" class="footer__email">geops@gmail.com</a>
+      </div>
+    </div>
+
+    <div class="footer__cols">
+      <div class="footer__col">
+        <h4 data-i18n="footer.col.product">Producto</h4>
+        <ul>
+          <li><a href="#categories" data-i18n="footer.l.cats">Categorías</a></li>
+          <li><a href="#services" data-i18n="footer.l.how">Cómo funciona</a></li>
+          <li><a href="#pricing" data-i18n="footer.l.pricing">Precios</a></li>
+          <li><a href="#" data-i18n="footer.l.blog">Blog</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4 data-i18n="footer.col.company">Compañía</h4>
+        <ul>
+          <li><a href="#team" data-i18n="footer.l.team">Equipo</a></li>
+          <li><a href="mailto:geops@gmail.com" data-i18n="footer.l.contact">Contacto</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4 data-i18n="footer.col.legal">Legal</h4>
+        <ul>
+          <li><a href="terms.html" data-i18n="footer.l.terms">Términos de servicio</a></li>
+          <li><a href="privacy-policy.html" data-i18n="footer.l.privacy">Política de privacidad</a></li>
+          <li><a href="privacy-policy.html#geo" data-i18n="footer.l.geo">Política de geolocalización</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <span data-i18n="footer.copy">© 2026 PauLuDev. Todos los derechos reservados.</span>
+      <div class="footer__bottom__legal">
+        <a href="terms.html" data-i18n="footer.l.terms">Términos de servicio</a>
+        <a href="privacy-policy.html" data-i18n="footer.l.privacy">Política de privacidad</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer__giant" aria-hidden="true">GEOPS</div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
