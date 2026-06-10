@@ -1,0 +1,7 @@
+/* ===== Utils ===== */
+
+.mono { font-family: var(--mono); }
+.eyebrow { font-family: var(--mono); font-size: 11px; text-transform: uppercase; letter-spacing: 0.12em; color: var(--ink-3); font-weight: 500; }
+.container { max-width: 1160px; margin: 0 auto; padding: 0 28px; }
+.text-balance { text-wrap: balance; }
+.text-pretty { text-wrap: pretty; }

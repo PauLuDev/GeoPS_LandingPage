@@ -1,0 +1,83 @@
+<!-- MERCHANT AUTH MODAL (full-page) -->
+<div id="merchantModal" style="display:none;position:fixed;inset:0;z-index:300;background:oklch(0.985 0.004 95);animation:mm-bg-in 240ms ease both;">
+
+  <!-- close btn top-left -->
+  <button onclick="closeMerchantModal()" style="position:absolute;top:20px;left:20px;appearance:none;border:0;background:white;border:1px solid var(--line);border-radius:10px;padding:8px 14px;display:flex;align-items:center;gap:7px;color:var(--ink-2);font-family:var(--font);font-size:13px;font-weight:500;cursor:pointer;transition:background 160ms;z-index:2;">
+    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+    Back
+  </button>
+  <!-- content grid -->
+  <div style="position:relative;z-index:1;display:grid;grid-template-columns:1fr 1fr;height:100vh;max-width:1100px;margin:0 auto;gap:0;">
+    <!-- Left: brand panel -->
+    <div style="display:flex;flex-direction:column;justify-content:center;padding:80px 56px;background:var(--bg-elev);border-right:1px solid var(--line);animation:mm-slide 500ms 80ms cubic-bezier(.2,.8,.2,1) both;">
+      <div style="display:flex;align-items:center;gap:10px;margin-bottom:48px;">
+        <div style="width:32px;height:32px;border-radius:9px;background:var(--brand);display:grid;place-items:center;">
+          <svg viewBox="0 0 24 24" fill="none" width="20" height="20"><path d="M12 22C6 15 4 11 4 8a8 8 0 0 1 16 0c0 3-2 7-8 14z" fill="oklch(0.22 0.06 130)"/><circle cx="12" cy="9" r="3" fill="white"/></svg>
+        </div>
+        <span style="font-size:16px;font-weight:600;color:white;letter-spacing:-0.01em;">GeoPS Business</span>
+      </div>
+      <h1 style="font-size:clamp(38px,4vw,54px);font-weight:700;letter-spacing:-0.04em;line-height:1.02;color:var(--ink);margin:0 0 20px;">Grow your business<br/>with <em style="font-style:normal;color:var(--brand-strong);">nearby customers</em></h1>
+      <p style="font-size:16px;line-height:1.62;color:var(--ink-2);max-width:40ch;margin:0 0 40px;">Publish geo-targeted coupons in under 5 minutes. Reach people already walking near your store and track every redemption in real time.</p>
+      <div style="display:flex;flex-direction:column;gap:16px;">
+        <div style="display:flex;align-items:center;gap:14px;">
+          <div style="width:36px;height:36px;border-radius:10px;background:var(--brand-soft);display:grid;place-items:center;flex-shrink:0;">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--brand-strong)" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/></svg>
+          </div>
+          <div><div style="font-size:13px;font-weight:500;color:var(--ink);">Live map placement</div><div style="font-size:12px;color:var(--ink-2);margin-top:1px;">Your business appears on the map the moment you publish.</div></div>
+        </div>
+        <div style="display:flex;align-items:center;gap:14px;">
+          <div style="width:36px;height:36px;border-radius:10px;background:var(--brand-soft);display:grid;place-items:center;flex-shrink:0;">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--brand-strong)" stroke-width="2" stroke-linecap="round"><line x1="12" y1="20" x2="12" y2="10"/><line x1="18" y1="20" x2="18" y2="4"/><line x1="6" y1="20" x2="6" y2="16"/></svg>
+          </div>
+          <div><div style="font-size:13px;font-weight:500;color:var(--ink);">Real-time analytics</div><div style="font-size:12px;color:var(--ink-2);margin-top:1px;">Views, reservations and redemptions tracked per campaign.</div></div>
+        </div>
+        <div style="display:flex;align-items:center;gap:14px;">
+          <div style="width:36px;height:36px;border-radius:10px;background:var(--brand-soft);display:grid;place-items:center;flex-shrink:0;">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--brand-strong)" stroke-width="2" stroke-linecap="round"><path d="M3 9a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v2a2 2 0 0 0 0 4v2a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-2a2 2 0 0 0 0-4z"/></svg>
+          </div>
+          <div><div style="font-size:13px;font-weight:500;color:var(--ink);">Free to start</div><div style="font-size:12px;color:var(--ink-2);margin-top:1px;">Freemium plan — no credit card, no commissions.</div></div>
+        </div>
+      </div>
+    </div>
+    <!-- Right: form -->
+    <div style="display:flex;align-items:center;justify-content:center;padding:40px 56px 40px 0;animation:mm-slide 500ms 180ms cubic-bezier(.2,.8,.2,1) both;">
+      <div style="background:white;border:1px solid var(--line);border-radius:22px;overflow:hidden;width:100%;max-width:400px;box-shadow:0 12px 40px -12px oklch(0.2 0.02 260/0.18);">
+    <!-- Header -->
+    <div style="padding:24px 28px 0;display:flex;align-items:center;gap:12px;background:white;">
+      <div style="width:28px;height:28px;border-radius:8px;background:var(--brand);display:grid;place-items:center;flex-shrink:0;">
+        <svg viewBox="0 0 24 24" fill="none" width="17" height="17"><path d="M12 22C6 15 4 11 4 8a8 8 0 0 1 16 0c0 3-2 7-8 14z" fill="oklch(0.22 0.06 130)"/><circle cx="12" cy="9" r="3" fill="white"/></svg>
+      </div>
+      <div style="flex:1;">
+        <div style="font-family:var(--mono);font-size:9px;text-transform:uppercase;letter-spacing:0.14em;color:var(--ink-3);">GeoPS Business</div>
+        <div style="font-size:17px;font-weight:600;letter-spacing:-0.02em;margin-top:1px;color:var(--ink);" id="mmTitle">Welcome back</div>
+      </div>
+      <button onclick="closeMerchantModal()" style="appearance:none;border:0;background:oklch(0.24 0.01 260);border-radius:8px;width:30px;height:30px;display:grid;place-items:center;cursor:pointer;color:oklch(0.60 0.01 260);flex-shrink:0;">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+    </div>
+    <!-- Tabs -->
+    <div style="display:flex;padding:0 28px;border-bottom:1px solid var(--line);margin-top:16px;background:white;">
+      <button class="mm-tab-btn" id="mmTabSign" onclick="mmSetTab('sign')" style="border-bottom-color:var(--brand);color:white;">Sign in</button>
+      <button class="mm-tab-btn" id="mmTabReg" onclick="mmSetTab('reg')">Register</button>
+    </div>
+    <!-- Form -->
+    <form onsubmit="mmSubmit(event)" style="padding:22px 28px 28px;display:flex;flex-direction:column;gap:14px;background:white;">
+      <div id="mmNameWrap" style="display:none;flex-direction:column;gap:6px;">
+        <label style="font-size:12px;color:var(--ink-2);font-weight:500;">Business name</label>
+        <input class="mm-input" placeholder="Tanta — Miraflores"/>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:6px;">
+        <label style="font-size:12px;color:var(--ink-2);font-weight:500;">Business email</label>
+        <input class="mm-input" type="email" required placeholder="hola@minegocio.pe"/>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:6px;">
+        <label style="font-size:12px;color:var(--ink-2);font-weight:500;">Password</label>
+        <input class="mm-input" type="password" required placeholder="••••••••"/>
+      </div>
+      <button type="submit" id="mmSubmitBtn" style="width:100%;background:var(--brand);color:var(--brand-ink);border:0;border-radius:12px;padding:13px;font-family:var(--font);font-size:14px;font-weight:600;cursor:pointer;margin-top:6px;transition:background 160ms;">Access dashboard</button>
+      <p style="text-align:center;font-size:11px;color:var(--ink-3);margin:0;">By continuing you agree to our <span style="color:var(--ink-2);cursor:pointer;text-decoration:underline;text-underline-offset:2px;">Terms of Service</span></p>
+    </form>
+      </div>
+    </div>
+  </div>
+</div>

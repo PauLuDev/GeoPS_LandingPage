@@ -1,0 +1,60 @@
+/* ===== Nav ===== */
+
+.nav {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 80;
+  padding: 12px 28px; display: flex; align-items: center; gap: 16px;
+  background: color-mix(in oklab, var(--bg-elev) 85%, transparent);
+  backdrop-filter: blur(18px); -webkit-backdrop-filter: blur(18px);
+  border-bottom: 1px solid var(--line);
+}
+.nav-brand { display: flex; align-items: center; gap: 10px; font-weight: 600; font-size: 16px; letter-spacing: -0.01em; }
+.nav-mark { width: 28px; height: 28px; border-radius: 8px; background: var(--ink); color: var(--bg-elev); display: grid; place-items: center; }
+.nav-mark svg { width: 18px; height: 18px; }
+.nav-beta { font-family: var(--mono); font-size: 10px; color: var(--ink-3); letter-spacing: 0.1em; text-transform: uppercase; padding: 2px 6px; border: 1px solid var(--line); border-radius: 4px; }
+.nav-spacer { flex: 1; }
+.nav-links { display: flex; gap: 2px; align-items: center; max-width: 100%; overflow-x: auto; -ms-overflow-style: none; scrollbar-width: none; }
+.nav-links::-webkit-scrollbar { display: none; }
+.nav-link { appearance: none; border: 0; background: transparent; padding: 8px 14px; border-radius: 8px; font-size: 14px; font-weight: 500; color: var(--ink-2); transition: background 160ms, color 160ms; display: inline-flex; align-items: center; gap: 6px; white-space: nowrap; flex-shrink: 0; }
+.nav-link:hover { background: var(--bg-sunken); color: var(--ink); }
+.nav-link.pill { border: 1px solid var(--line); border-radius: 999px; }
+.nav-link.dark { background: var(--ink); color: var(--bg-elev); border-radius: 10px; }
+.nav-link.dark:hover { background: oklch(0.22 0.01 260); }
+
+/* ===== Shared section ===== */
+
+section { padding: 96px 0; }
+section.tight { padding: 64px 0; }
+.section-head { text-align: center; margin-bottom: 60px; }
+.section-tag { display: inline-flex; align-items: center; gap: 8px; padding: 5px 14px; border-radius: 999px; background: var(--brand-soft); color: var(--brand-ink); font-size: 11px; font-weight: 600; font-family: var(--mono); letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 16px; }
+.section-tag-dot { width: 5px; height: 5px; border-radius: 50%; background: var(--brand-strong); }
+.section-title { font-size: clamp(32px, 4.2vw, 52px); font-weight: 700; letter-spacing: -0.035em; line-height: 1.06; margin-top: 10px; }
+.section-sub { font-size: 17px; color: var(--ink-2); max-width: 52ch; margin: 16px auto 0; line-height: 1.6; }
+.bg-elev { background: var(--bg-elev); }
+.bg-ink { background: var(--ink); color: var(--bg-elev); }
+.bg-sunken { background: var(--bg-sunken); }
+
+/* ===== Buttons ===== */
+
+.btn { appearance: none; border: 0; display: inline-flex; align-items: center; gap: 8px; font-family: inherit; font-weight: 600; border-radius: 12px; transition: transform 140ms ease, box-shadow 140ms ease, background 140ms ease; }
+.btn:active { transform: scale(0.98); }
+.btn-lg { padding: 14px 24px; font-size: 15px; }
+.btn-md { padding: 11px 18px; font-size: 14px; }
+.btn-sm { padding: 8px 14px; font-size: 13px; border-radius: 9px; }
+.btn-black { background: var(--ink); color: var(--bg-elev); box-shadow: 0 4px 16px -4px oklch(0.12 0.01 260 / 0.4); }
+.btn-black:hover { background: oklch(0.20 0.01 260); box-shadow: 0 8px 24px -6px oklch(0.12 0.01 260 / 0.5); }
+.btn-brand { background: var(--brand); color: var(--brand-ink); }
+.btn-brand:hover { background: oklch(0.82 0.18 130); }
+.btn-outline { background: transparent; color: var(--ink); border: 1.5px solid var(--line-strong); }
+.btn-outline:hover { background: var(--bg-sunken); border-color: var(--ink-3); }
+.btn-ghost-white { background: color-mix(in oklab, white 15%, transparent); color: white; border: 1px solid color-mix(in oklab, white 25%, transparent); }
+.btn-ghost-white:hover { background: color-mix(in oklab, white 25%, transparent); }
+.btn-white { background: white; color: var(--ink); }
+.btn-white:hover { background: var(--bg-sunken); }
+
+/* ===== Marquee ===== */
+
+.marquee-wrap { border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); padding: 13px 0; overflow: hidden; background: var(--bg-elev); }
+.marquee-track { display: flex; width: max-content; animation: marquee 24s linear infinite; }
+@keyframes marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+.marquee-item { display: inline-flex; align-items: center; gap: 10px; padding: 0 28px; font-size: 13px; color: var(--ink-2); font-family: var(--mono); white-space: nowrap; border-right: 1px solid var(--line); }
+.marquee-dot { width: 5px; height: 5px; border-radius: 50%; background: var(--brand); }

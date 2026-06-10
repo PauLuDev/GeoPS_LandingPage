@@ -1,0 +1,28 @@
+<!-- NAV -->
+<nav class="nav" id="mainNav">
+  <a href="Landing.html" class="nav-brand">
+    <div class="nav-mark"><svg viewBox="0 0 24 24" fill="none"><path d="M12 22C6 15 4 11 4 8a8 8 0 0 1 16 0c0 3-2 7-8 14z" fill="currentColor"/><circle cx="12" cy="9" r="3" fill="oklch(0.78 0.18 130)"/></svg></div>
+    GeoPS
+  </a>
+  <div class="nav-spacer"></div>
+  <button class="nav-hamburger" id="navHamburger" aria-label="Menu" aria-expanded="false" onclick="toggleMobileNav()">
+    <span></span><span></span><span></span>
+  </button>
+  <div class="nav-links" id="navLinks">
+    <a href="#funciona" class="nav-link" data-i18n="nav.how">How it works</a>
+    <a href="#negocios" class="nav-link" data-i18n="nav.biz">For businesses</a>
+    <a href="#precios" class="nav-link" data-i18n="nav.pricing">Pricing</a>
+    <a href="#equipo" class="nav-link" data-i18n="nav.team">Team</a>
+    <div class="nav-divider"></div>
+    <div class="nav-auth">
+      <a href="GeoPS.html" class="nav-link" data-i18n="nav.login">Log in</a>
+      <a href="GeoPS.html" class="btn btn-outline btn-sm" data-i18n="nav.signup">Sign up</a>
+      <button onclick="openMerchantModal()" class="btn btn-black btn-sm" data-i18n="nav.merchant" style="white-space:nowrap;font-family:inherit;border:0;cursor:pointer;">I'm a business</button>
+    </div>
+    <div class="lang-toggle">
+      <button class="lang-btn active" id="langEn" onclick="setLang('en')">EN</button>
+      <button class="lang-btn" id="langEs" onclick="setLang('es')">ES</button>
+    </div>
+  </div>
+</nav>
+
