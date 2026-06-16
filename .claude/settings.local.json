@@ -1,7 +1,9 @@
 {
   "permissions": {
     "allow": [
-      "Bash(node build.js)"
+      "Bash(node build.js)",
+      "Bash(grep -n \"cta.em\\\\|cta.title\\\\|cta\\\\\\\\.h\" i18n/es.json i18n/en.json)",
+      "mcp__Claude_Preview__preview_start"
     ]
   }
 }
